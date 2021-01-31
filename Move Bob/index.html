@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Bob</title>
+    <style>
+      body {
+        background-color: lightgreen;
+        display: flex;
+      }
+
+      .face {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 75%;
+        background-color: lightsalmon;
+        margin-top: 50px;
+        margin-left: 80px;
+      }
+
+      .eye-container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 15px;
+        padding-top: 20px;
+      }
+
+      .eye {
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 10px;
+      }
+
+      .pupil {
+        background-color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 10px 0 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="face">
+      <div class="eye-container">
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
